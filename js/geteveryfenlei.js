@@ -10,10 +10,10 @@
                     	remenbiaoti.style.display="none";
                     }
                     if(obj==false){
-                    	remenUl.innerHTML=`<h1 id="meiyoushuju">我们的杜老师没给数据</h1>`
+                    	remenUl.innerHTML=`<h1 id="meiyoushuju">数据未获取到</h1>`
                     	return;
                     }
-                    
+
                 	for (var i=0;i<obj.length;i++) {
 //              		console.log(obj[i]);
                 		remenUl.innerHTML+=
@@ -26,10 +26,10 @@
 	                		    ${obj[i].goods_desc}
 	                		   </p>
 	                		   <p class="remenprice">￥${obj[i].price}</p>
-		                	 </a>		                	 
+		                	 </a>
                 		</li>
                 		`
-                	} 
+                	}
                 	function getQueryString(name) {
 						  var search = location.search.substr(1);
 						  //abc=123&a=&ccc=abc
@@ -67,5 +67,5 @@
                     	})(i)
                     }
                     */
-                    
+
                 })
